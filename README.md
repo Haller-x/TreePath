@@ -22,4 +22,4 @@ python treepath.py --root exemple/ --filename TreeDirectories.txt --print True
 
 - print: print on kernel? Default False
 
-**Default filename will be tree.txt**
+**Default filename is tree.txt**
