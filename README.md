@@ -16,10 +16,10 @@ Usage:
 ```
 python treepath.py --root exemple/ --filename TreeDirectories.txt --print True
 ```
-root: Folder to map
+- root: Folder to map
 
-filename: txt filename (can be in other folder also)
+- filename: txt filename (can be in other folder also)
 
-print: want to print on kernel? Default False
+- print: print on kernel? Default False
 
 **Default filename will be tree.txt**
