@@ -1,3 +1,4 @@
+import os
 import argparse
 from pathlib import Path
 
@@ -19,7 +20,7 @@ class DisplayablePath(object):
     @property
     def displayname(self):
         if self.path.is_dir():
-            return self.path.name + '/'
+            return self.path.name + os.sep
         return self.path.name
 
     @classmethod
@@ -53,7 +54,7 @@ class DisplayablePath(object):
     @property
     def displayname(self):
         if self.path.is_dir():
-            return self.path.name + '/'
+            return self.path.name + os.sep
         return self.path.name
 
     def displayable(self):
@@ -86,7 +87,7 @@ if __name__=="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--root', required=True, help='root folder, pasta raiz')
     parser.add_argument('--filename', default='tree.txt', help='filename,nome do arquivo')
-    parser.add_argument('--print', default=False, help='print on kernel')
+    parser.add_argument('--print', default=False, help='print on kernel,printar no kernel')
     opt = parser.parse_args()
 
     file_txt = open(opt.filename, "w")
